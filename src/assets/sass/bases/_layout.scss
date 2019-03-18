@@ -1,0 +1,23 @@
+.page-inner{
+
+
+    .component{
+            margin: 0 30px;
+
+        &__left{
+            -webkit-box-shadow: $box-shadow;
+                    box-shadow: $box-shadow;
+
+        &__body{
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+        }
+        &__right{
+            -webkit-box-shadow: $box-shadow;
+                    box-shadow: $box-shadow;
+    }
+}
+}
