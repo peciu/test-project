@@ -5,19 +5,77 @@
             margin: 0 30px;
 
         &__left{
+            padding: 30px 50px;
             -webkit-box-shadow: $box-shadow;
                     box-shadow: $box-shadow;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+
+                    &__footer{
+                        text-align: right;
+                    }
 
         &__body{
             overflow: hidden;
-            img{
-                width: 100%;
+        }
+
+        .contact-inner{
+            padding: 30px 50px;
+            margin: 20px 0;
+
+            &__headline{
+                padding: 15px 0;
+            }
+
+            &__e-mail{
+                padding-top: 30px;
             }
         }
+
         }
         &__right{
             -webkit-box-shadow: $box-shadow;
                     box-shadow: $box-shadow;
+                    padding: 50px 50px;
+                    &__content{
+                        padding: 30px 50px;
+                        // border: 2px dashed black;
+                            &__headline{
+                                margin-top: 30px;
+                            }
+                    }
+                    &__content-two{
+                        p{
+                            -webkit-columns: 2;
+                                    columns: 2;
+                        }
+                        &__paragraph{
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+
+                            img{
+                                width: 350px;
+                                height: 400px;
+                                -o-object-fit: cover;
+                                   object-fit: cover;
+                                margin-top: -150px;
+                            }
+                        }
+                    }
     }
+}
+img{
+    width: 100%;
+    -webkit-filter: brightness(90%) grayscale(100%) contrast(130%);
+            filter: brightness(90%) grayscale(100%) contrast(130%);
 }
 }
