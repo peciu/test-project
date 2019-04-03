@@ -26,6 +26,8 @@ h1{
     text-transform: uppercase;
     font-size: 100px;
     color: $color;
+    -webkit-transition: 1s;
+    transition: 1s;
 }
 
 h2{
@@ -33,10 +35,14 @@ h2{
     text-transform: uppercase;
     font-size: 50px;
     color: $color;
+        -webkit-transition: 1s;
+        transition: 1s;
 }
 
 p{
     color: $color;
+        -webkit-transition: 1s;
+        transition: 1s;
 }
 
 h6{
@@ -45,6 +51,8 @@ h6{
     line-height: 1.8rem;
     color: $color;
     margin-bottom: 0px;
+        -webkit-transition: 1s;
+        transition: 1s;
 }
 
 h3{
@@ -53,6 +61,8 @@ h3{
     font-size: 1.8em;
     font-family: Pressura-Mono-Bold;
     text-transform: uppercase;
+        -webkit-transition: 1s;
+        transition: 1s;
 }
 
 h4{
@@ -62,6 +72,8 @@ h4{
     line-height: 1.8rem;
     font-family: Pressura-Mono-Bold;
     text-transform: uppercase;
+        -webkit-transition: 1s;
+        transition: 1s;
 }
 
 ul{
@@ -71,11 +83,25 @@ ul{
 }
 
 .special-border{
+        height: 100%;
     border: 3px solid;
 -o-border-image: url("../images/outline-blue.svg") 32 round;
    border-image: url("../images/outline-blue.svg") 32 round;
    -webkit-filter: brightness(90%) grayscale(100%) contrast(130%);
            filter: brightness(90%) grayscale(100%) contrast(130%);
 text-align: center;
+-webkit-transition: 1s;
+transition: 1s;
+&:hover{
+-webkit-filter: none;
+            filter: none;
+            .image{
+                -webkit-filter: none;
+                            filter: none;
+            }
+            h2, h4, h6{
+                color: #26488c;
+            }
+}
 
 }

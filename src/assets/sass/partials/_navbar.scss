@@ -104,6 +104,19 @@
                         -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
+                    position: relative;
+                    svg{
+                        position: absolute;
+                        stroke-dasharray: 943px;
+                        stroke-dashoffset: 943px;
+                        -webkit-animation: stroke-dashoffset .6s,opacity .1s ease-out;
+                        -webkit-transition: stroke-dashoffset .6s,opacity .1s ease-out;
+                        transition: stroke-dashoffset .6s,opacity .1s ease-out;
+                        z-index: 999;
+                        &:hover{
+                            stroke-dashoffset: 0px;
+                        }
+
         }
     }
 
@@ -113,4 +126,5 @@
 height: 200px;
 width: 200px;
 fill: $color;
+}
 }

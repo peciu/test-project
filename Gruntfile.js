@@ -46,9 +46,12 @@ module.exports = function(grunt) {
     svg_sprite: {
         generate: {
             cwd: 'web/assets/vendor/material-design-icons',
-            src: ['../../../../web/assets/images/ic_logo_24px.svg',
+            src: [
+                '../../../../web/assets/images/ic_logo_24px.svg',
+                '../../../../web/assets/images/ic_logobold_24px.svg',
+                '../../../../web/assets/images/ic_outlineone_24px.svg',
 
-            ],
+        ],
             dest: 'src/sprites',
             options: {
                 shape: {
